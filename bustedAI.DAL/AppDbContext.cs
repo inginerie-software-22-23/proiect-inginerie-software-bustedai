@@ -23,17 +23,22 @@ namespace rentalAppAPI.DAL
     {   
         public AppDbContext(DbContextOptions<AppDbContext> options) : base (options)
         {
-
         }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            var cascadeFKs = modelBuilder.Model.GetEntityTypes()
+                                               .SelectMany(t => t.GetForeignKeys())
+                                               .Where(fk => !fk.IsOwnership && fk.DeleteBehavior == DeleteBehavior.Cascade);
 
+            foreach (var fk in cascadeFKs)
+                fk.DeleteBehavior = DeleteBehavior.Restrict;
             //modelBuilder.ApplyConfiguration(new PictureConfiguration());
 
         }
+        public DbSet<VideoImport> VideoImports { get; set; }
 
     }
 }
