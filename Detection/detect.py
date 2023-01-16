@@ -1,5 +1,6 @@
 import torch
 import cv2 as cv
+from sort import *
 
 def get_rectangles_from_pandas(results_pandas):
     rectangles = []
@@ -31,9 +32,11 @@ def extract_frames_and_write_from_video(video_name, model):
         success,image = video.read()
         count += 1
 # Model
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+model.cpu()  # CPU
 # Configuring the model
 model.conf = 0.5
 #model.classes = [0]
-name_of_video = "Detection\\4K Road traffic video for object detection and tracking - free download now!.mp4"
+name_of_video = "Detection\Y2Mate.is - Trapped  One Minute Short Film-nDCt6fUE9-o-360p-1654766858605.mp4"
 extract_frames_and_write_from_video(name_of_video, model)
