@@ -2,6 +2,7 @@ import torch
 import cv2 as cv
 import numpy as np
 from sort.sort import *
+import sys
 import os
 
 def get_rectangles_from_pandas(results_pandas):
@@ -79,13 +80,22 @@ def create_user_folder_if_not_existing(output_folder_name, video_name):
     create_folder_for_video_output(folder_path, video_name) 
     return True
 
+def get_system_arguments():
+    name_of_video = sys.argv[1]
+    output_folder = sys.argv[2]
+    conf = float(sys.argv[3])
+
+    return name_of_video, output_folder, conf
+
 # Model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5m')
 model.cpu()  # CPU
 # Configuring the model
+#name_of_video, output_folder, conf = get_system_arguments()
+#model.conf = conf
 model.conf = 0.75
 #model.classes = [0]
-name_of_video = "Detection\\video.mp4"
+name_of_video = "Detection\\a.mp4"
 output_folder = "user"
 
 result = create_user_folder_if_not_existing(output_folder, name_of_video)
