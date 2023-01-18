@@ -75,7 +75,7 @@ def create_user_folder_if_not_existing(output_folder_name, video_name):
         return None
 
     file = open(f"{folder_path}\\all_analyzed.txt", 'a')
-    file.write(video_name)
+    file.write("\n" + video_name)
     file.close()
     create_folder_for_video_output(folder_path, video_name) 
     return True
@@ -89,10 +89,13 @@ def get_system_arguments():
 
 # Model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5m')
-model.cpu()  # CPU
+
 # Configuring the model
 #name_of_video, output_folder, conf = get_system_arguments()
 #model.conf = conf
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu") #passing the model to cpu or gpu
+
 model.conf = 0.75
 #model.classes = [0]
 name_of_video = "Detection\\a.mp4"
