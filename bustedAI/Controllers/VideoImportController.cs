@@ -1,10 +1,14 @@
-﻿using AutoMapper;
-using MediatR;
+
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.StaticFiles;
 using rentalAppAPI.DAL;
 using rentalAppAPI.DAL.Entities;
 using System.Diagnostics;
+using System.Net.Mime;
 using System.Text.RegularExpressions;
+using System.Web;
+using Grpc.Core;
 
 namespace rentalAppAPI.Controllers
 {
@@ -30,22 +34,12 @@ namespace rentalAppAPI.Controllers
             }
 
             var x = new VideoImport { FilePath = filePath};
-            //here we save the file path in our db
-            // if the user wants to view the history of the imported videos 
             db.VideoImports.Add(x);
             await db.SaveChangesAsync();
-            // here we will transfer the imported video to the python scipt that will generate the wanted pictures
-            //IFormFile file1 = "C:\Users\grosu\Downloads\a.mp4";
-            //using (FileStream stream = new FileStream(file1.OpenReadStream()))
-            //{
-            //    byte[] buffer = new byte[stream.Length];
-            //    stream.Read(buffer, 0, (int)stream.Length);
-            //    // Do something with the byte array
-            //}
 
             var filesFromPythonScyrpt = new List<string>();
             var scriptPath = "C:/Users/grosu/PycharmProjects/Teste/test.py";
-            var arguments = filePath; //the argument of the pyton script is the file we imported
+            var arguments = filePath; 
 
             using (Process process = new Process())
             {
@@ -61,14 +55,10 @@ namespace rentalAppAPI.Controllers
                     filesFromPythonScyrpt = result.Split(Environment.NewLine).ToList();
                 }
             }
+            string filePath1 = Path.Combine(Directory.GetCurrentDirectory(), "App_Data", "Uploads", "demofile2.txt");
 
-
-            return Ok(filesFromPythonScyrpt);
+            return PhysicalFile(filePath, "application/download", "demofile2.txt");
         }
 
-        //[HttpGet]
-        // to do in handler a get method that gets type of pictures that we want from the algorithm
-        // ex: cars, persons etc.
-        // to discuss
     }
 }

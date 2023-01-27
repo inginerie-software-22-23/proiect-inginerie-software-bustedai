@@ -96,12 +96,24 @@ namespace rentalAppAPI
                     };
                 });
 
-            services.AddAuthorization(opt =>
+            services.AddCors(options =>
             {
-                opt.AddPolicy("Admin", policy => policy.RequireRole("Admin").RequireAuthenticatedUser().AddAuthenticationSchemes("AuthScheme").Build());
-                opt.AddPolicy("User", policy => policy.RequireRole("User").RequireAuthenticatedUser().AddAuthenticationSchemes("AuthScheme").Build());
 
+                options.AddDefaultPolicy(
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
             });
+
+            //services.AddAuthorization(opt =>
+            //{
+            //    opt.AddPolicy("Admin", policy => policy.RequireRole("Admin").RequireAuthenticatedUser().AddAuthenticationSchemes("AuthScheme").Build());
+            //    opt.AddPolicy("User", policy => policy.RequireRole("User").RequireAuthenticatedUser().AddAuthenticationSchemes("AuthScheme").Build());
+
+            //});
             
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
@@ -115,12 +127,12 @@ namespace rentalAppAPI
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "bustedAI v1"));
+
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors();
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

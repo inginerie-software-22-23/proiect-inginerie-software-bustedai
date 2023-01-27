@@ -1,4 +1,3 @@
-﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using rentalAppAPI.BLL.Models;
 using System;
@@ -6,8 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MediatR;
-using AutoMapper;
 using System.Threading;
 using rentalAppAPI.DAL;
 using System.IO;
