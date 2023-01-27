@@ -48,11 +48,22 @@ namespace rentalAppAPI
             services.AddTransient<IUserManager, UserManager>();
 
             services.AddTransient<InitialSeed>();
-            
-            
 
-            
-            
+            services.AddCors(options =>
+            {
+
+                options.AddDefaultPolicy(
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
+
+
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "bustedAI", Version = "v1" });
@@ -119,6 +130,7 @@ namespace rentalAppAPI
 
             app.UseHttpsRedirection();
 
+            app.UseCors();
             app.UseRouting();
 
             app.UseAuthorization();
