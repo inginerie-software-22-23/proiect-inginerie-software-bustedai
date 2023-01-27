@@ -109,7 +109,6 @@ check_or_create_folder_output()
 
 model.conf = 0.75
 model.classes = [0]
-name_of_video = "Detection\\a.mp4"
 output_folder = ""
 
 extract_frames_and_write_from_video(name_of_video, model)
