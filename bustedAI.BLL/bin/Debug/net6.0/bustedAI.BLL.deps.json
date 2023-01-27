@@ -8,12 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "bustedAI.BLL/1.0.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "AutoMapper": "12.0.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
-=======
           "MediatR": "11.1.0",
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.0",
@@ -23,33 +18,14 @@
           "bustedAI.BLL.dll": {}
         }
       },
-<<<<<<< HEAD
-      "AutoMapper/12.0.0": {
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/AutoMapper.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.0.0"
-          }
-        }
-      },
-      "MediatR/11.0.0": {
-=======
       "MediatR/11.1.0": {
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
         "dependencies": {
           "MediatR.Contracts": "1.0.1"
         },
         "runtime": {
           "lib/netstandard2.1/MediatR.dll": {
             "assemblyVersion": "11.0.0.0",
-<<<<<<< HEAD
-            "fileVersion": "11.0.0.0"
-=======
             "fileVersion": "11.1.0.0"
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
           }
         }
       },
@@ -61,21 +37,6 @@
           }
         }
       },
-<<<<<<< HEAD
-      "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
-        "dependencies": {
-          "MediatR": "11.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.0.0.0"
-          }
-        }
-      },
-=======
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
@@ -204,11 +165,7 @@
           "System.Text.Encodings.Web": "4.5.0"
         }
       },
-<<<<<<< HEAD
-      "Microsoft.CSharp/4.7.0": {},
-=======
       "Microsoft.CSharp/4.5.0": {},
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
       "Microsoft.Data.SqlClient/2.1.4": {
         "dependencies": {
           "Microsoft.Data.SqlClient.SNI.runtime": "2.1.1",
@@ -452,11 +409,7 @@
       },
       "Microsoft.IdentityModel.Tokens/6.10.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "Microsoft.CSharp": "4.7.0",
-=======
           "Microsoft.CSharp": "4.5.0",
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
           "Microsoft.IdentityModel.Logging": "6.10.0",
           "System.Security.Cryptography.Cng": "4.5.0"
         },
@@ -654,11 +607,6 @@
       },
       "bustedAI.DAL/1.0.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "AutoMapper": "12.0.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
-=======
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.0",
@@ -679,28 +627,12 @@
       "serviceable": false,
       "sha512": ""
     },
-<<<<<<< HEAD
-    "AutoMapper/12.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0Rmg0zI5AFu1O/y//o9VGyhxKjhggWpk9mOA1tp0DEVx40c61bs+lnQv+0jUq8XbniF7FKgIVvI1perqiMtLrA==",
-      "path": "automapper/12.0.0",
-      "hashPath": "automapper.12.0.0.nupkg.sha512"
-    },
-    "MediatR/11.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-8klzVGZQiA2oxZRzQFBZbdPD/IQUm9RYtfiyTDKhxDQ99Gi93+GXt1ZJjH2D7Lh7ZFHCv5XdkwbmfHEQBCatPg==",
-      "path": "mediatr/11.0.0",
-      "hashPath": "mediatr.11.0.0.nupkg.sha512"
-=======
     "MediatR/11.1.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-YIbtrLOyeCuIv8vIuHL/mMdls5xmgS36pIOJDxKZuu55nxA2MI2Z+E/Uk0z+F/LE11AGmpjplOM0NZ91m5LQBA==",
       "path": "mediatr/11.1.0",
       "hashPath": "mediatr.11.1.0.nupkg.sha512"
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
     },
     "MediatR.Contracts/1.0.1": {
       "type": "package",
@@ -709,16 +641,6 @@
       "path": "mediatr.contracts/1.0.1",
       "hashPath": "mediatr.contracts.1.0.1.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-jfD2NBYvP+HiUil2DWfM4bn+bCLp4H2xvoc9aorcnn2Jpgz7Ey8RyYMpgqeF3bs6CP6t8pzb6WkF5NFF/1RLHA==",
-      "path": "mediatr.extensions.microsoft.dependencyinjection/11.0.0",
-      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
-    },
-=======
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -845,21 +767,12 @@
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "Microsoft.CSharp/4.7.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
-      "path": "microsoft.csharp/4.7.0",
-      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
-=======
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
->>>>>>> 8e085f9 (IlGr/Added Backend functionality)
     },
     "Microsoft.Data.SqlClient/2.1.4": {
       "type": "package",
