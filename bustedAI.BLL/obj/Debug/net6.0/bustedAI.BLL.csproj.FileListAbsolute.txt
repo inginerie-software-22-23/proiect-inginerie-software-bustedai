@@ -13,3 +13,18 @@ C:\Users\grosu\Documents\GitHub\Busted AI\proiect-inginerie-software-bustedai\bu
 C:\Users\grosu\Documents\GitHub\Busted AI\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\refint\bustedAI.BLL.dll
 C:\Users\grosu\Documents\GitHub\Busted AI\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.pdb
 C:\Users\grosu\Documents\GitHub\Busted AI\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\ref\bustedAI.BLL.dll
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\bin\Debug\net6.0\bustedAI.BLL.deps.json
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\bin\Debug\net6.0\bustedAI.BLL.dll
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\bin\Debug\net6.0\bustedAI.BLL.pdb
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\bin\Debug\net6.0\bustedAI.DAL.dll
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\bin\Debug\net6.0\bustedAI.DAL.pdb
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.csproj.AssemblyReference.cache
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.AssemblyInfoInputs.cache
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.AssemblyInfo.cs
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.csproj.CoreCompileInputs.cache
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.csproj.CopyComplete
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.dll
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\refint\bustedAI.BLL.dll
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\bustedAI.BLL.pdb
+C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.BLL\obj\Debug\net6.0\ref\bustedAI.BLL.dll

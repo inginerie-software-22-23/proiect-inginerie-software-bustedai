@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ujedvBIlJ50ZBOy6LWIZOryvCr5j5OmgC9NOGAaoG254XCPv7f/F7h6uG3h49kOOwVuzVNCOfwfg36F6b4IIzg==",
+  "dgSpecHash": "nmNwBn+/gQpSLFBxHEScs22VyHwOHP9Hjrb3WoivmhP98WDjSXT5f9MzD1FWdR//nFme0FD1621Dc9jB5DOuag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\grosu\\Documents\\GitHub\\Busted AI\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj",
+  "projectFilePath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grosu\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\grosu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

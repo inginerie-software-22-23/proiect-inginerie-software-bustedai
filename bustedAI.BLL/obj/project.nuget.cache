@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lr5EoxJARmupUdsj964x4av0OZDdadVy19DUrfNTf0Z+9bO9jgRWsEmIJ1XC0p2KkVPy65va0AUZDnxUXTvGOw==",
+  "dgSpecHash": "3kxt41NfUvdaydnTefRMYmRWfpMFicxfURWuclizojku8QLi+lD0YjuYz6SwI2k0c4F1a5CTE7XQHQcm2cJLvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\grosu\\Documents\\GitHub\\Busted AI\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj",
+  "projectFilePath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grosu\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\grosu\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
