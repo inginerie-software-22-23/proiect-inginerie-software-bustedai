@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3kxt41NfUvdaydnTefRMYmRWfpMFicxfURWuclizojku8QLi+lD0YjuYz6SwI2k0c4F1a5CTE7XQHQcm2cJLvg==",
+  "dgSpecHash": "OS+/RQ700FThlSJWcZYOEy6GtZQU5IECIvVQEQfWpzeY//kgFb9g8OfDh2Wc/blNBmL1OAmKWzDXdvptzxvWnQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grosu\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\grosu\\.nuget\\packages\\cliwrap\\3.6.0\\cliwrap.3.6.0.nupkg.sha512",
     "C:\\Users\\grosu\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\grosu\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\grosu\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
