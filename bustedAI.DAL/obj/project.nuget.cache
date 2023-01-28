@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nmNwBn+/gQpSLFBxHEScs22VyHwOHP9Hjrb3WoivmhP98WDjSXT5f9MzD1FWdR//nFme0FD1621Dc9jB5DOuag==",
+  "dgSpecHash": "V8WABQNtIoTtPL+LUqenPQqlTVriVhZ41mekHjMuzF07jqFA6LpJR73/mSJrxqIntKtNFDZKJyV4VhD2bYJEsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grosu\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\grosu\\.nuget\\packages\\cliwrap\\3.6.0\\cliwrap.3.6.0.nupkg.sha512",
     "C:\\Users\\grosu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\grosu\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\grosu\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
