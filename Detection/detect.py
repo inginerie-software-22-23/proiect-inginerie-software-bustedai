@@ -19,7 +19,7 @@ def get_rectangles_from_pandas(results_pandas):
 
 def crop_rectangles_images(image, rectangles, img_name, used_indexes):
     global output_folder, name_of_video
-    video_name_without_extension = get_video_name(name_of_video)
+    video_name_without_extension = "output_video" #get_video_name(name_of_video)
     output_folder_name = f"Output"
     name = 0
     for rectangle in rectangles:
@@ -40,6 +40,7 @@ def image_recognition(model, image, image_name, mot_tracker, used_indexes):
 def extract_frames_and_write_from_video(video_name, model):
     video = cv.VideoCapture(video_name)
     success,image = video.read()
+    print(success)
     count = 0
     mot_tracker = Sort()
     used_indexes = dict()
@@ -47,6 +48,8 @@ def extract_frames_and_write_from_video(video_name, model):
         image_recognition(model, image, f"{video_name}_{count}", mot_tracker, used_indexes)
         success,image = video.read()
         count += 1
+
+    video.release()
 
 def get_video_name(video_name):
     path_video = video_name.split("\\")
@@ -97,11 +100,18 @@ def make_zip_file():
         for image_name in os.listdir("Output"):
             myzip.write(f"Output\\{image_name}")
 
+def rename_video_file(old_video_path):
+    video_path_new = old_video_path.split(".")[0]
+    video_path_new = video_path_new + ".mp4"
+    os.rename(old_video_path, video_path_new)
+    return video_path_new
+
 # Model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5m')
 
 # Configuring the model
 name_of_video = get_system_arguments()
+name_of_video = rename_video_file(name_of_video)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu") #passing the model to cpu or gpu
 
