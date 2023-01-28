@@ -1,0 +1,16 @@
+vg-player {
+    font-family: videogular;
+    position:relative;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    background-color: #000;
+    text-align: center;
+    margin: auto;
+}
+
+.lottie-animation{
+    width: auto;
+    height: 300px;
+}
