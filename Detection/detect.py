@@ -103,7 +103,8 @@ def make_zip_file():
 def rename_video_file(old_video_path):
     video_path_new = old_video_path.split(".")[0]
     video_path_new = video_path_new + ".mp4"
-    os.remove(video_path_new)
+    if os.path.exists(video_path_new):
+        os.remove(video_path_new)
     os.rename(old_video_path, video_path_new)
     return video_path_new
 
