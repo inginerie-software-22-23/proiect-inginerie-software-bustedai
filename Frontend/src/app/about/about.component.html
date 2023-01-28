@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <vg-player>
+                <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
+                    <source src="https://wellsr.com/python/assets/video/output_video.mp4 " type="video/mp4">
+                </video>
+            </vg-player>
+        </div>
+        <div class="col-sm">
+            <div class="form-outline">
+                <input class="form-control" id="formControlReadonly" type="text" value="How our algorithm works..."
+                    aria-label="readonly input example" readonly />
+
+            </div>
+            <div class="container">
+                <h1>YOLO ALGORITHM</h1>
+
+                <p>YOLO algorithm aims to predict a class of an object </p><p>and the bounding box that defines the object location on the input image.</p>
+
+                <p>It recognizes each bounding box using four numbers: Center of the bounding box ( ) Width of the box ( )</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
