@@ -12,6 +12,9 @@ proiect-inginerie-software-bustedai created by GitHub Classroom
 # Link Problem Statement
 [Problem Statement](https://docs.google.com/document/d/1TZzNgOfmmYbAetV1EVqiXQN3iuhumcBcCAhJzQYMF8Y/edit)
 
+# Link Project Chart
+[Project Chart](https://docs.google.com/document/d/1VCJf-GGZD8LIGYsz41iVwcwmNcKJWqzs1Unu8eLc69c/edit?amp%3Busp=embed_facebook)
+
 # busted AI Endpoints
 
 ### Auth
