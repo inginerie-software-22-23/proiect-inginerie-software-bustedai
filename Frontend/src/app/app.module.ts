@@ -20,13 +20,15 @@ import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderLoginComponent } from './header-login/header-login.component';
 import { AboutComponent } from './about/about.component';
-
+import { FooterComponent } from './footer/footer.component';
+import { LottieAnimationViewModule } from 'ng-lottie';
+// import { LottieInteractive } from 'lottie-interactive';
 export function playerFactory() {
   return player;
 }
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, VideoImportComponent, SpinnerComponent, AuthComponent, HomeComponent, HeaderLoginComponent, AboutComponent
+    AppComponent, HeaderComponent, VideoImportComponent, SpinnerComponent, AuthComponent, HomeComponent, HeaderLoginComponent, AboutComponent, FooterComponent
   ],
   
   imports: [
@@ -43,8 +45,7 @@ export function playerFactory() {
     VgBufferingModule,
     NgxSpinnerModule,
     LottieModule.forRoot({ player: playerFactory }),
-    
-    
+    LottieAnimationViewModule   
   ],
   providers: [  {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true}],
   bootstrap: [AppComponent]
