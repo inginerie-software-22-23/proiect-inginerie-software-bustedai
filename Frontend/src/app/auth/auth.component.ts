@@ -14,8 +14,13 @@ export class AuthComponent implements OnInit {
   isFormValid = false;
   areCredentialsInvalid = false;
   options: AnimationOptions = {    
-    path: '/assets/lottie/camera-login.json'  
+    path: '/assets/lottie/camera-login.json'
   };  
+  options2: AnimationOptions = {
+    path: 'assets/lottie/background.json',
+    autoplay: true,
+    loop: true
+  };
   onAnimate(animationItem: AnimationItem): void {    
     console.log(animationItem);  
   }
