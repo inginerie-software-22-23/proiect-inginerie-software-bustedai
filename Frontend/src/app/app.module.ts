@@ -22,13 +22,14 @@ import { HeaderLoginComponent } from './header-login/header-login.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { LottieAnimationViewModule } from 'ng-lottie';
+import { DemoComponent } from './demo/demo.component';
 // import { LottieInteractive } from 'lottie-interactive';
 export function playerFactory() {
   return player;
 }
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, VideoImportComponent, SpinnerComponent, AuthComponent, HomeComponent, HeaderLoginComponent, AboutComponent, FooterComponent
+    AppComponent, HeaderComponent, VideoImportComponent, SpinnerComponent, AuthComponent, HomeComponent, HeaderLoginComponent, AboutComponent, FooterComponent, DemoComponent
   ],
   
   imports: [

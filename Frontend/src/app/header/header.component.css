@@ -1,3 +1,11 @@
+
+.navbar{
+	background-color: #16222A, -webkit-linear-gradient(59deg, #3A6073, #16222A), linear-gradient(59deg, #3A6073, #16222A);
+	transition: background-color 1s ease;
+	color: var(--navbar-scroll-text);
+	-webkit-box-shadow: var(--navbar-scroll-shadow);
+	box-shadow: var(--navbar-scroll-shadow);
+}
 .navbar-nav .nav-link {
 	padding-left: .5rem;
 }
