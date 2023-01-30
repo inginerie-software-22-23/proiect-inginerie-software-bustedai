@@ -12,7 +12,7 @@ def get_rectangles_from_pandas(results_pandas):
     for ind in results_pandas.index:
         pt1 = (int(results_pandas['ymin'][ind]), int(results_pandas['xmin'][ind]))
         pt2 = (int(results_pandas['ymax'][ind]),int(results_pandas['xmax'][ind]))
-        if results_pandas['class'][ind] == 0:
+        if results_pandas['class'][ind] == 0 or results_pandas['class'][ind] == 2:
             rectangles.append([pt1[0], pt2[0], pt1[1], pt2[1], results_pandas['confidence'][ind]])
     
     return np.array(rectangles)
@@ -91,7 +91,7 @@ def rename_video_file(old_video_path):
 
 if __name__ == "__main__":
     # Model
-    model = torch.hub.load('ultralytics/yolov5', 'yolov5m')
+    model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 
     # Configuring the model
     name_of_video = get_system_arguments()
@@ -108,7 +108,7 @@ if __name__ == "__main__":
         file.close()
 
     model.conf = 0.75
-    model.classes = [0]
+    model.classes = [0, 2]
     output_folder = ""
 
     extract_frames_and_write_from_video(name_of_video, model)
