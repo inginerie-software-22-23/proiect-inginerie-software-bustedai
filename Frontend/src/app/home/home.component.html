@@ -1,10 +1,14 @@
 <app-header></app-header>
 <br><br>
 <app-video-import></app-video-import>
+
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+
             <app-spinner></app-spinner>
+
             <div class="lottie-animation mt-10">
                 <ng-lottie [options]="options" (animationCreated)="onAnimate($event)">
                 </ng-lottie>
