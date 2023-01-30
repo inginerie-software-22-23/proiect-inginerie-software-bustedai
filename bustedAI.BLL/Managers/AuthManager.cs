@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using rentalAppAPI.BLL.Interfaces;
-using rentalAppAPI.BLL.Models;
-using rentalAppAPI.DAL.Entities;
+using bustedAI.BLL.Interfaces;
+using bustedAI.BLL.Models;
+using bustedAI.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.BLL.Managers
+namespace bustedAI.BLL.Managers
 {
     public class AuthManager : IAuthManager
     {

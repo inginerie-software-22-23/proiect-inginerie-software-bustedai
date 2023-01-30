@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using rentalAppAPI.BLL.Models;
+using bustedAI.BLL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using MediatR;
 using AutoMapper;
 using System.Threading;
-using rentalAppAPI.DAL;
+using bustedAI.DAL;
 using System.IO;
 
-namespace rentalAppAPI.BLL.Handlers
+namespace bustedAI.BLL.Handlers
 {
     //public class VideoImportHandler : IRequestHandler<VideoImportModelRequest, VideoImportModelResponse>
     //{

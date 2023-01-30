@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "rentalAppAPI": {
+    "bustedAI": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

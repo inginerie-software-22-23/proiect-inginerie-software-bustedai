@@ -1,13 +1,13 @@
-﻿using rentalAppAPI.BLL.Interfaces;
-using rentalAppAPI.DAL.Interfaces;
-using rentalAppAPI.DAL.Models;
+﻿using bustedAI.BLL.Interfaces;
+using bustedAI.DAL.Interfaces;
+using bustedAI.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.BLL.Managers
+namespace bustedAI.BLL.Managers
 {
     public class UserManager : IUserManager
     {

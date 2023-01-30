@@ -1,11 +1,11 @@
-﻿using rentalAppAPI.BLL.Models;
+﻿using bustedAI.BLL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.BLL.Interfaces
+namespace bustedAI.BLL.Interfaces
 {
     public interface IAuthManager
     {

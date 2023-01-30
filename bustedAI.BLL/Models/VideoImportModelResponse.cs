@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.BLL.Models
+namespace bustedAI.BLL.Models
 {
     public class VideoImportModelResponse
     {

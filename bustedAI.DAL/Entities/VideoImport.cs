@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.DAL.Entities
+namespace bustedAI.DAL.Entities
 {
     public class VideoImport
     {

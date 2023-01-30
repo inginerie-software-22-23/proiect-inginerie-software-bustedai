@@ -8,7 +8,7 @@ using System.Windows.Input;
 using MediatR;
 
 
-namespace rentalAppAPI.BLL.Models
+namespace bustedAI.BLL.Models
 {
     public class VideoImportModelRequest : IRequest<List<VideoImportModelResponse>>
     {

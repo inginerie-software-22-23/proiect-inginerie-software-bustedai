@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace rentalAppAPI.DAL.Migrations
+namespace bustedAI.DAL.Migrations
 {
     public partial class AddAuth : Migration
     {

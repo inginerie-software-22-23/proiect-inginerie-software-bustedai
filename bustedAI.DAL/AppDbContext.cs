@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using rentalAppAPI.DAL.Configurations;
-using rentalAppAPI.DAL.Entities;
+using bustedAI.DAL.Configurations;
+using bustedAI.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.DAL
+namespace bustedAI.DAL
 {
     public class AppDbContext : IdentityDbContext<
         User,
