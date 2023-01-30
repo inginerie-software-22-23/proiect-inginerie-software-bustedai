@@ -103,7 +103,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(len(os.listdir("Output")), 2)
         TestStringMethods.delete_folder_output_contents()
 
-    def test_make_zip_file_with_content_tese(self):
+    def test_make_zip_file_with_content_test(self):
         image = cv.imread("img_test.jpg")
         file_with_rectangles = pd.read_csv("fisier_rectangle.csv")
         rectangles = get_rectangles_from_pandas(file_with_rectangles)
@@ -126,7 +126,7 @@ class TestStringMethods(unittest.TestCase):
 
         os.remove("Output.zip")
 
-    def test_make_zip_file_with_content_tese(self):
+    def test_make_zip_file_without_content_test(self):
         image = cv.imread("img_test.jpg")
         file_with_rectangles = pd.read_csv("fisier_rectangle.csv")
         rectangles = get_rectangles_from_pandas(file_with_rectangles)
@@ -147,6 +147,26 @@ class TestStringMethods(unittest.TestCase):
         TestStringMethods.delete_folder_output_contents()
         self.assertTrue(os.path.exists("Output.zip"))
         os.remove("Output.zip")
+    
+    def test_check_if_folder_is_created_empty(self):
+        image = cv.imread("img_test.jpg")
+        file_with_rectangles = pd.read_csv("fisier_rectangle.csv")
+        rectangles = get_rectangles_from_pandas(file_with_rectangles)
+        used_index = dict()
+        used_index[1] = True
+
+        rectangles[0][4] = 2 #assigning value of id
+        rectangles[1][4] = 3 #assigning value of id to be the same
+
+        self.assertEqual(len(rectangles), 2)
+        crop_rectangles_images(image, rectangles, "", used_index)
+        
+        self.assertEqual(len(os.listdir("Output")), 2)
+
+        check_or_create_folder_output()
+
+        self.assertEqual(len(os.listdir("Output")), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
