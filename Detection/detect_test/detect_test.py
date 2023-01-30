@@ -6,9 +6,18 @@ import os
 import unittest
 import pandas as pd
 import cv2 as cv
+import zipfile
 
 class TestStringMethods(unittest.TestCase):
     
+    def delete_folder_output_contents():
+        folder_name = "Output"
+
+        files = os.listdir(folder_name)
+
+        for file in files:
+            os.remove(f"{folder_name}\\{file}")
+
     def test_rename_video_file_test_positive_example(self):
         name_of_video = "D:\proiect_is\proiect-inginerie-software-bustedai\Detection\detect_test\\tmpD300.tmp"
         new_video_path = rename_video_file(name_of_video)
@@ -47,20 +56,97 @@ class TestStringMethods(unittest.TestCase):
         self.assertFalse(np.all(rectangle1 == rectangles[0]))
         self.assertFalse(np.all(rectangle2 == rectangles[1]))
 
-    def test_cropped_images_from_image(self):
+    def test_cropped_images_from_image_first_test(self):
         image = cv.imread("img_test.jpg")
         file_with_rectangles = pd.read_csv("fisier_rectangle.csv")
         rectangles = get_rectangles_from_pandas(file_with_rectangles)
         used_index = dict()
 
-        rectangles[0][4] = 1 #assigning value 
+        rectangles[0][4] = 1 #assigning value of id
 
-        print(len(rectangles))
         self.assertEqual(len(rectangles), 2)
         crop_rectangles_images(image, rectangles, "", used_index)
         
-        self.assertEqual(len(os.listdir("Output")), 1)
+        self.assertEqual(len(os.listdir("Output")), 2)
+        TestStringMethods.delete_folder_output_contents()
+        self.assertEqual(len(os.listdir("Output")), 0)
 
+    def test_cropped_images_from_image_second_test(self):
+        image = cv.imread("img_test.jpg")
+        file_with_rectangles = pd.read_csv("fisier_rectangle.csv")
+        rectangles = get_rectangles_from_pandas(file_with_rectangles)
+        used_index = dict()
+        used_index[1] = True
+
+        rectangles[0][4] = 1 #assigning value of id
+        rectangles[1][4] = 1 #assigning value of id to be the same
+
+        self.assertEqual(len(rectangles), 2)
+        crop_rectangles_images(image, rectangles, "", used_index)
+        
+        self.assertEqual(len(os.listdir("Output")), 0)
+        TestStringMethods.delete_folder_output_contents()
+
+    def test_cropped_images_from_image_third_test(self):
+        image = cv.imread("img_test.jpg")
+        file_with_rectangles = pd.read_csv("fisier_rectangle.csv")
+        rectangles = get_rectangles_from_pandas(file_with_rectangles)
+        used_index = dict()
+        used_index[1] = True
+
+        rectangles[0][4] = 2 #assigning value of id
+        rectangles[1][4] = 3 #assigning value of id to be the same
+
+        self.assertEqual(len(rectangles), 2)
+        crop_rectangles_images(image, rectangles, "", used_index)
+        
+        self.assertEqual(len(os.listdir("Output")), 2)
+        TestStringMethods.delete_folder_output_contents()
+
+    def test_make_zip_file_with_content_tese(self):
+        image = cv.imread("img_test.jpg")
+        file_with_rectangles = pd.read_csv("fisier_rectangle.csv")
+        rectangles = get_rectangles_from_pandas(file_with_rectangles)
+        used_index = dict()
+        used_index[1] = True
+
+        rectangles[0][4] = 2 #assigning value of id
+        rectangles[1][4] = 3 #assigning value of id to be the same
+
+        self.assertEqual(len(rectangles), 2)
+        crop_rectangles_images(image, rectangles, "", used_index)
+        
+        self.assertEqual(len(os.listdir("Output")), 2)
+        
+        make_zip_file()
+
+        TestStringMethods.delete_folder_output_contents()
+
+        self.assertTrue(os.path.exists("Output.zip"))
+
+        os.remove("Output.zip")
+
+    def test_make_zip_file_with_content_tese(self):
+        image = cv.imread("img_test.jpg")
+        file_with_rectangles = pd.read_csv("fisier_rectangle.csv")
+        rectangles = get_rectangles_from_pandas(file_with_rectangles)
+        used_index = dict()
+        used_index[1] = True
+
+        rectangles[0][4] = 1 #assigning value of id
+        rectangles[1][4] = 1 #assigning value of id to be the same
+
+        self.assertEqual(len(rectangles), 2)
+        crop_rectangles_images(image, rectangles, "", used_index)
+        
+        self.assertEqual(len(os.listdir("Output")), 0)
+        
+        make_zip_file()
+
+        self.assertEqual(len(os.listdir("Output")), 1)
+        TestStringMethods.delete_folder_output_contents()
+        self.assertTrue(os.path.exists("Output.zip"))
+        os.remove("Output.zip")
 
 if __name__ == '__main__':
     unittest.main()
