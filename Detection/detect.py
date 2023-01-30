@@ -40,7 +40,6 @@ def image_recognition(model, image, image_name, mot_tracker, used_indexes):
 def extract_frames_and_write_from_video(video_name, model):
     video = cv.VideoCapture(video_name)
     success,image = video.read()
-    print(success)
     count = 0
     mot_tracker = Sort()
     used_indexes = dict()
@@ -96,6 +95,12 @@ def check_or_create_folder_output():
     os.mkdir("Output")
 
 def make_zip_file():
+
+    if len(os.listdir("Output")) == 0:
+        file = open(f"Output\\fisier.txt", 'w')
+        file.write("Hello")
+        file.close()
+
     with zipfile.ZipFile("Output.zip","w") as myzip:
         for image_name in os.listdir("Output"):
             myzip.write(f"Output\\{image_name}")
@@ -103,26 +108,38 @@ def make_zip_file():
 def rename_video_file(old_video_path):
     video_path_new = old_video_path.split(".")[0]
     video_path_new = video_path_new + ".mp4"
+    
     if os.path.exists(video_path_new):
         os.remove(video_path_new)
-    os.rename(old_video_path, video_path_new)
-    return video_path_new
 
-# Model
-model = torch.hub.load('ultralytics/yolov5', 'yolov5m')
+    if os.path.exists(old_video_path):
+        os.rename(old_video_path, video_path_new)
+        return video_path_new
+    
+    return None
 
-# Configuring the model
-name_of_video = get_system_arguments()
-name_of_video = rename_video_file(name_of_video)
+if __name__ == "__main__":
+    # Model
+    model = torch.hub.load('ultralytics/yolov5', 'yolov5m')
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu") #passing the model to cpu or gpu
+    # Configuring the model
+    name_of_video = get_system_arguments()
+    name_of_video = rename_video_file(name_of_video)
 
-check_or_create_folder_output()
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu") #passing the model to cpu or gpu
 
-model.conf = 0.75
-model.classes = [0]
-output_folder = ""
+    check_or_create_folder_output()
+    
+    if name_of_video == None:
+        make_zip_file()
+        file = open("Output\\text.txt", 'w')
+        file.write("Nu s-a furnizat numele fisierului")
+        file.close()
 
-extract_frames_and_write_from_video(name_of_video, model)
+    model.conf = 0.75
+    model.classes = [0]
+    output_folder = ""
 
-make_zip_file()
+    extract_frames_and_write_from_video(name_of_video, model)
+
+    make_zip_file()
