@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace rentalAppAPI.DAL.Migrations
+namespace bustedAI.DAL.Migrations
 {
     public partial class VideoImport : Migration
     {

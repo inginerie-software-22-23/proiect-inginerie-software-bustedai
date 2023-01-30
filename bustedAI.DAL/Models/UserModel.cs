@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.DAL.Models
+namespace bustedAI.DAL.Models
 {
     public class UserModel
     {

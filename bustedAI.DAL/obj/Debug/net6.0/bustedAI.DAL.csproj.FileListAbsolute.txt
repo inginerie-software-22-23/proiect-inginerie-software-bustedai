@@ -26,3 +26,17 @@ C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.DAL
 C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.pdb
 C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.genruntimeconfig.cache
 C:\Users\grosu\Documents\GitHub\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\ref\bustedAI.DAL.dll
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\bin\Debug\net6.0\bustedAI.DAL.deps.json
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\bin\Debug\net6.0\bustedAI.DAL.runtimeconfig.json
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\bin\Debug\net6.0\bustedAI.DAL.dll
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\bin\Debug\net6.0\bustedAI.DAL.pdb
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.csproj.AssemblyReference.cache
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.AssemblyInfoInputs.cache
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.AssemblyInfo.cs
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.csproj.CoreCompileInputs.cache
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.dll
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\refint\bustedAI.DAL.dll
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.pdb
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\bustedAI.DAL.genruntimeconfig.cache
+C:\Users\alexb\Documents\proiecte\IS\proiect-inginerie-software-bustedai\bustedAI.DAL\obj\Debug\net6.0\ref\bustedAI.DAL.dll

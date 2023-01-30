@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using rentalAppAPI.DAL;
+using bustedAI.DAL;
 
 #nullable disable
 
-namespace rentalAppAPI.DAL.Migrations
+namespace bustedAI.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20221227124340_AddAuth")]
@@ -112,7 +112,7 @@ namespace rentalAppAPI.DAL.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("rentalAppAPI.DAL.Entities.Role", b =>
+            modelBuilder.Entity("bustedAI.DAL.Entities.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -142,7 +142,7 @@ namespace rentalAppAPI.DAL.Migrations
                     b.ToTable("AspNetRoles", (string)null);
                 });
 
-            modelBuilder.Entity("rentalAppAPI.DAL.Entities.User", b =>
+            modelBuilder.Entity("bustedAI.DAL.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -225,7 +225,7 @@ namespace rentalAppAPI.DAL.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("rentalAppAPI.DAL.Entities.UserRole", b =>
+            modelBuilder.Entity("bustedAI.DAL.Entities.UserRole", b =>
                 {
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -252,7 +252,7 @@ namespace rentalAppAPI.DAL.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
-                    b.HasOne("rentalAppAPI.DAL.Entities.Role", null)
+                    b.HasOne("bustedAI.DAL.Entities.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -261,7 +261,7 @@ namespace rentalAppAPI.DAL.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
                 {
-                    b.HasOne("rentalAppAPI.DAL.Entities.User", null)
+                    b.HasOne("bustedAI.DAL.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -270,7 +270,7 @@ namespace rentalAppAPI.DAL.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
                 {
-                    b.HasOne("rentalAppAPI.DAL.Entities.User", null)
+                    b.HasOne("bustedAI.DAL.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -279,32 +279,32 @@ namespace rentalAppAPI.DAL.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
                 {
-                    b.HasOne("rentalAppAPI.DAL.Entities.User", null)
+                    b.HasOne("bustedAI.DAL.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("rentalAppAPI.DAL.Entities.UserRole", b =>
+            modelBuilder.Entity("bustedAI.DAL.Entities.UserRole", b =>
                 {
-                    b.HasOne("rentalAppAPI.DAL.Entities.Role", null)
+                    b.HasOne("bustedAI.DAL.Entities.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("rentalAppAPI.DAL.Entities.Role", "Role")
+                    b.HasOne("bustedAI.DAL.Entities.Role", "Role")
                         .WithMany("UserRoles")
                         .HasForeignKey("RoleId1");
 
-                    b.HasOne("rentalAppAPI.DAL.Entities.User", null)
+                    b.HasOne("bustedAI.DAL.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("rentalAppAPI.DAL.Entities.User", "User")
+                    b.HasOne("bustedAI.DAL.Entities.User", "User")
                         .WithMany("UserRoles")
                         .HasForeignKey("UserId1");
 
@@ -313,12 +313,12 @@ namespace rentalAppAPI.DAL.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("rentalAppAPI.DAL.Entities.Role", b =>
+            modelBuilder.Entity("bustedAI.DAL.Entities.Role", b =>
                 {
                     b.Navigation("UserRoles");
                 });
 
-            modelBuilder.Entity("rentalAppAPI.DAL.Entities.User", b =>
+            modelBuilder.Entity("bustedAI.DAL.Entities.User", b =>
                 {
                     b.Navigation("UserRoles");
                 });

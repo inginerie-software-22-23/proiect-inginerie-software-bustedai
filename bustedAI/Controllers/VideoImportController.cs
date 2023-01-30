@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.StaticFiles;
-using rentalAppAPI.DAL;
+using bustedAI.DAL;
 
-using rentalAppAPI.DAL.Entities;
+using bustedAI.DAL.Entities;
 using System.Diagnostics;
 using System.Net.Mime;
 using System.Text.RegularExpressions;
@@ -14,7 +14,7 @@ using CliWrap;
 using CliWrap.Buffered;
 using Mono.Unix.Native;
 
-namespace rentalAppAPI.Controllers
+namespace bustedAI.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]

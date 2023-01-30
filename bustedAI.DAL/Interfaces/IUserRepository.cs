@@ -1,12 +1,12 @@
-﻿using rentalAppAPI.DAL.Entities;
-using rentalAppAPI.DAL.Models;
+﻿using bustedAI.DAL.Entities;
+using bustedAI.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.DAL.Interfaces
+namespace bustedAI.DAL.Interfaces
 {
     public interface IUserRepository
     {

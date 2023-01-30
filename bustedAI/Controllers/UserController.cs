@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using rentalAppAPI.BLL.Interfaces;
+using bustedAI.BLL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using rentalAppAPI.BLL.Models;
-using rentalAppAPI.DAL.Models;
+using bustedAI.BLL.Models;
+using bustedAI.DAL.Models;
 
-namespace rentalAppAPI.Controllers
+namespace bustedAI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

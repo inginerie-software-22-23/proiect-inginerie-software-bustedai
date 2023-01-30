@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
-using rentalAppAPI.BLL.Interfaces;
-using rentalAppAPI.DAL.Entities;
+using bustedAI.BLL.Interfaces;
+using bustedAI.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -12,7 +12,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.BLL.Helper
+namespace bustedAI.BLL.Helper
 {
     public class TokenHelper : ITokenHelper
     {

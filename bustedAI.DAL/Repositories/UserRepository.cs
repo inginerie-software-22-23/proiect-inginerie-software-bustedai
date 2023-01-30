@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using rentalAppAPI.DAL.Entities;
-using rentalAppAPI.DAL.Interfaces;
-using rentalAppAPI.DAL.Models;
+using bustedAI.DAL.Entities;
+using bustedAI.DAL.Interfaces;
+using bustedAI.DAL.Models;
+using bustedAI.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace rentalAppAPI.DAL.Repositories
+namespace bustedAI.DAL.Repositories
 {
     public class UserRepository : IUserRepository
     {

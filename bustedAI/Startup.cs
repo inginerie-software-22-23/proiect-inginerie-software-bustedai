@@ -11,20 +11,21 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using rentalAppAPI.BLL.Helper;
-using rentalAppAPI.BLL.Interfaces;
-using rentalAppAPI.BLL.Managers;
-using rentalAppAPI.DAL;
-using rentalAppAPI.DAL.Entities;
-using rentalAppAPI.DAL.Interfaces;
-using rentalAppAPI.DAL.Repositories;
+using bustedAI.BLL.Helper;
+using bustedAI.BLL.Interfaces;
+using bustedAI.BLL.Managers;
+using bustedAI.DAL;
+using bustedAI.DAL;
+using bustedAI.DAL.Entities;
+using bustedAI.DAL.Interfaces;
+using bustedAI.DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI
+namespace bustedAI
 {
     public class Startup
     {

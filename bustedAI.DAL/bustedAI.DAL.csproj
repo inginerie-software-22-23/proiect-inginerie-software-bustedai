@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <LangVersion>preview</LangVersion>
-    <RootNamespace>rentalAppAPI.DAL</RootNamespace>
+    <RootNamespace>bustedAI.DAL</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

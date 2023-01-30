@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using rentalAppAPI.DAL.Entities;
+using bustedAI.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rentalAppAPI.DAL
+namespace bustedAI.DAL
 {
     public class InitialSeed
     {
