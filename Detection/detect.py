@@ -55,35 +55,6 @@ def get_video_name(video_name):
     video_name = path_video[len(path_video) - 1].split('.')[0]
     return video_name
 
-#def create_folder_for_video_output(user_folder_name, video_name):
-#    video_name = get_video_name(video_name)
-#    os.mkdir(f"{user_folder_name}\\{video_name}")
-#
-#def create_user_folder_if_not_existing(output_folder_name, video_name):
-#    folder_path = f"Output\\{output_folder_name}"
-#    all_file = None
-#    file = None
-#    if os.path.exists(folder_path) == False:
-#        os.mkdir(folder_path)
-#        file = open(f"{folder_path}\\all_analyzed.txt", 'w+')
-#    else:
-#        if os.path.exists(f"{folder_path}\\all_analyzed.txt") == True:
-#            file = open(f"{folder_path}\\all_analyzed.txt", 'r+')
-#            all_file = file.read()
-#        else:
-#            file = open(f"{folder_path}\\all_analyzed.txt", 'w+')
-#    
-#    file.close()
-#
-#    if all_file != None and video_name in all_file:
-#        return None
-#
-#    file = open(f"{folder_path}\\all_analyzed.txt", 'a')
-#    file.write("\n" + video_name)
-#    file.close()
-#    create_folder_for_video_output(folder_path, video_name) 
-#    return True
-
 def get_system_arguments():
     name_of_video = sys.argv[1]
     return name_of_video
