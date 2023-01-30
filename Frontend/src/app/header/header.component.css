@@ -27,7 +27,7 @@
 	.navbar-nav a:focus,
 	.navbar-nav a:active,
 	.navbar-nav a.hilite {
-		transform: translateY(0.5rem) scaleY(1.2);
+		transform: translateY(0.5rem) scaleY(1.0);
 	}
 	.navbar-nav .nav-link {
 		padding-left: 0;
