@@ -1,17 +1,17 @@
-export class SignInData {
-    private login: string;
-    private password: string;
+export interface SignInData {
+     email: string;
+     password: string;
 
-    constructor(login: string, password: string) {
-        this.login = login;
-        this.password = password;
-    }
+    // constructor(email: string, password: string) {
+    //     this.email = email;
+    //     this.password = password;
+    // }
 
-    getLogin(): string {
-        return this.login;
-    }
+    // getLogin(): string {
+    //     return this.email;
+    // }
 
-    getPassword(): string {
-        return this.password;
-    }
+    // getPassword(): string {
+    //     return this.password;
+    // }
 }

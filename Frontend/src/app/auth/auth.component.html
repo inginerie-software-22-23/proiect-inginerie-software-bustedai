@@ -5,15 +5,15 @@
       <div class="login-wrapper">
         <div class="card">
           <div class="card-body">
-            <form class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
-              <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <form class="form-signin"  [formGroup]="loginForm"(ngSubmit)="login()">
+              <h1 class="h3 mb-3 font-weight-normal">Log in</h1>
 
-              <label for="inputlogin" class="sr-only">Login </label>
-              <input type="text" id="inputLogin" class="form-control" name="login" placeholder="Login" ngModel required
+              <label for="email" class="sr-only">Login </label>
+              <input formControlName = "email" type="text" id="email" class="form-control" name="email" placeholder="Email" ngModel required
                 autofocus>
 
-              <label for="inputPassword" class="sr-only">Password</label>
-              <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password"
+              <label for="password" class="sr-only">Password</label>
+              <input  formControlName = "password" type="password" id="password" class="form-control" name="password" placeholder="Password"
                 autocomplete="on" ngModel required>
 
               <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
@@ -24,6 +24,8 @@
               <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
                 Invalid user or password.
               </div>
+              <span>Don't have an account? 
+                <a routerLink="/register">Register now!</a></span>
             </form>
           </div>
         </div>

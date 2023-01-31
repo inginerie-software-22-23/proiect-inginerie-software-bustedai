@@ -1,0 +1,37 @@
+<app-header-login></app-header-login>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="login-wrapper">
+        <div class="card">
+          <div class="card-body">
+            <form class="form-signin"  [formGroup]="signUpForm" (ngSubmit)="signUp()">
+              <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+
+              <label for="email" class="sr-only">Email </label>
+              <input formControlName = "email"  type="email" id="email" class="form-control" name="email" placeholder="Email" ngModel required
+                autofocus>
+
+              <label for="password" class="sr-only">Password</label>
+              <input  formControlName = "password" type="password" id="password" class="form-control" name="password" placeholder="Password"
+                autocomplete="on" ngModel required>
+
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+
+
+              <span>Already have an account? 
+                <a routerLink="/auth">Log in now!</a></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="lottie-animation mt-10">
+        <ng-lottie [options]="options" (animationCreated)="onAnimate($event)">
+        </ng-lottie>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

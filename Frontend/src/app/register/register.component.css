@@ -1,0 +1,21 @@
+.login-wrapper {
+    margin-top: 100px;
+    width: auto;
+    height: 300px;
+}
+
+input {
+    margin-bottom: 2rem;
+}
+
+button {
+    margin-bottom: 2rem;
+}
+.lottie-animation{
+    margin-top: 100px;
+    width: auto;
+    height: 300px;
+}
+.div{
+    background-image: url("../../assets/lottie/107922-motion-wave.json");
+}
