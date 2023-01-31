@@ -1,0 +1,13 @@
+jobs:
+  on_build_actions:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          cd $GITHUB_WORKSPACE/Detection/detect_test
+          python -m pip install --upgrade pip
+          pip install torch torchaudio torchvision
+          pip install numpy
+      - name: Run Tests    
+        run: python -m unittest Detection/detect_test/detect_test.py
