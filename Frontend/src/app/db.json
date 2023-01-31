@@ -1,0 +1,14 @@
+{
+  "signupUsersList": [
+    {
+      "email": "grosu.ilinca@gmail.com",
+      "password": "Smaranda2008!",
+      "id": 1
+    },
+    {
+      "email": "sss@yahoo.com",
+      "password": "stringstringA123!",
+      "id": 6
+    }
+  ]
+}
