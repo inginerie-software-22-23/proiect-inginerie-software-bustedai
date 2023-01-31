@@ -1,6 +1,7 @@
 # proiect-inginerie-software-bustedai
 proiect-inginerie-software-bustedai created by GitHub Classroom
 
+[![.NET Core Desktop](https://github.com/inginerie-software-22-23/proiect-inginerie-software-bustedai/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/inginerie-software-22-23/proiect-inginerie-software-bustedai/actions/workflows/dotnet-desktop.yml)
 
 # Link Sprint Planner
 [Sprint Planner for bustedAI project](https://docs.google.com/spreadsheets/d/16vLLRd1A86IMXz-6o4SOA034RU-AbtB7rw2PQL5WCJE/edit#gid=0)
