@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI\\bustedAI.csproj": {}
+    "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI\\bustedAI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj": {
+    "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj",
         "projectName": "bustedAI.BLL",
-        "projectPath": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj",
-        "packagesPath": "C:\\Users\\alexb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\obj\\",
+        "projectPath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj",
+        "packagesPath": "C:\\Users\\grosu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alexb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\grosu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj": {
-                "projectPath": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj"
+              "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj": {
+                "projectPath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj"
               }
             }
           }
@@ -85,21 +90,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj": {
+    "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj",
         "projectName": "bustedAI.DAL",
-        "projectPath": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj",
-        "packagesPath": "C:\\Users\\alexb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\obj\\",
+        "projectPath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\bustedAI.DAL.csproj",
+        "packagesPath": "C:\\Users\\grosu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alexb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\grosu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,6 +116,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -188,21 +198,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI\\bustedAI.csproj": {
+    "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI\\bustedAI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI\\bustedAI.csproj",
+        "projectUniqueName": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI\\bustedAI.csproj",
         "projectName": "bustedAI",
-        "projectPath": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI\\bustedAI.csproj",
-        "packagesPath": "C:\\Users\\alexb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI\\obj\\",
+        "projectPath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI\\bustedAI.csproj",
+        "packagesPath": "C:\\Users\\grosu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alexb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\grosu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,14 +224,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj": {
-                "projectPath": "C:\\Users\\alexb\\Documents\\proiecte\\IS\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj"
+              "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj": {
+                "projectPath": "C:\\Users\\grosu\\Documents\\GitHub\\proiect-inginerie-software-bustedai\\bustedAI.BLL\\bustedAI.BLL.csproj"
               }
             }
           }
@@ -306,7 +321,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

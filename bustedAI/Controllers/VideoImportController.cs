@@ -26,9 +26,23 @@ namespace bustedAI.Controllers
             this.db = db;
         }
 
+        public static string[] mediaExtensions = {
+            ".mp4", ".tmp"
+};
+        public static bool IsMediaFIle(string path)
+        {
+            return mediaExtensions.Contains(Path.GetExtension(path), StringComparer.OrdinalIgnoreCase);
+        }
+
         [HttpPost]
         public async Task<IActionResult> PostFile(IFormFile file)
         {
+            var fileS = Path.GetFileName(file.FileName);
+            if (IsMediaFIle(fileS) == false)
+            {
+                return BadRequest("Import a video of type .mp4 or .tmp");
+            }
+
 
             var filePath = Path.GetTempFileName();
 
@@ -37,9 +51,7 @@ namespace bustedAI.Controllers
                 await file.CopyToAsync(stream);
             }
 
-            var x = new VideoImport { FilePath = filePath };
-            db.VideoImports.Add(x);
-            await db.SaveChangesAsync();
+
 
 
             var scriptPath = "C:/Users/grosu/Documents/GitHub/proiect-inginerie-software-bustedai/Detection/detect.py";
