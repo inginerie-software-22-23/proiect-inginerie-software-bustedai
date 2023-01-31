@@ -26,10 +26,22 @@ namespace bustedAI.Controllers
             this.db = db;
         }
 
+        public static string[] mediaExtensions = {
+            ".mp4", ".tmp"
+};
+        public static bool IsMediaFIle(string path)
+        {
+            return mediaExtensions.Contains(Path.GetExtension(path), StringComparer.OrdinalIgnoreCase);
+        }
         [HttpPost]
         public async Task<IActionResult> PostFile(IFormFile file)
         {
 
+            var fileS = Path.GetFileName(file.FileName);
+            if (IsMediaFIle(fileS) == false)
+            {
+                return BadRequest("Import a video of type .mp4 or .tmp");
+            }
             var filePath = Path.GetTempFileName();
 
             using (var stream = new FileStream(filePath, FileMode.Create))
