@@ -19,3 +19,5 @@ proiect-inginerie-software-bustedai created by GitHub Classroom
 # Link Demo1
 https://youtu.be/HobbTK76AaQ
 
+# Livrabil final
+
