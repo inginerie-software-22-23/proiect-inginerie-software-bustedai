@@ -20,4 +20,5 @@ proiect-inginerie-software-bustedai created by GitHub Classroom
 https://youtu.be/HobbTK76AaQ
 
 # Livrabil final
+[Documentation](https://github.com/inginerie-software-22-23/proiect-inginerie-software-bustedai/blob/main/documentatie_bustedAI.pdf)
 
