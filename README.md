@@ -16,7 +16,7 @@ proiect-inginerie-software-bustedai created by GitHub Classroom
 # Link Project Chart
 [Project Chart](https://docs.google.com/document/d/1VCJf-GGZD8LIGYsz41iVwcwmNcKJWqzs1Unu8eLc69c/edit?amp%3Busp=embed_facebook)
 
-# Link Demo 12
+# Link Demo 1
 https://youtu.be/HobbTK76AaQ
 
 # Link Demo 2
