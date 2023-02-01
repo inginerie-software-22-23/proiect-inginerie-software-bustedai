@@ -16,8 +16,14 @@ proiect-inginerie-software-bustedai created by GitHub Classroom
 # Link Project Chart
 [Project Chart](https://docs.google.com/document/d/1VCJf-GGZD8LIGYsz41iVwcwmNcKJWqzs1Unu8eLc69c/edit?amp%3Busp=embed_facebook)
 
-# Link Demo1
+# Link Demo 1
 https://youtu.be/HobbTK76AaQ
+
+#Link Demo 2
+https://www.youtube.com/watch?v=oba0NEF1Dco&feature=youtu.be&ab_channel=IlincaGrosu
+
+#Link Demo 3
+https://www.youtube.com/watch?v=OnQG59rtcqw&ab_channel=IlincaGrosu
 
 # Livrabil final
 [Documentation](https://github.com/inginerie-software-22-23/proiect-inginerie-software-bustedai/blob/main/documentatie_bustedAI.pdf)
